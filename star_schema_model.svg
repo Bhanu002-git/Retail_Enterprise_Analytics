@@ -1,0 +1,29 @@
+flowchart TB
+    DimDate[DimDate]
+    DimCustomer[DimCustomer]
+    DimProduct[DimProduct]
+    DimStore[DimStore]
+    DimRegion[DimRegion]
+    FactSales[[FactSales]]
+    FactReturns[[FactReturns]]
+    FactInventory[[FactInventory]]
+
+    DimDate --> FactSales
+    DimCustomer --> FactSales
+    DimProduct --> FactSales
+    DimStore --> FactSales
+    DimRegion --> FactSales
+
+    DimDate --> FactReturns
+    DimCustomer --> FactReturns
+    DimProduct --> FactReturns
+    DimStore --> FactReturns
+    FactSales --> FactReturns
+
+    DimDate --> FactInventory
+    DimProduct --> FactInventory
+    DimStore --> FactInventory
+    DimRegion --> FactInventory
+
+    DimRegion --> DimCustomer
+    DimRegion --> DimStore

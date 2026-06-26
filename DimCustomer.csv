@@ -1,0 +1,133 @@
+# Dataset Data Dictionary
+
+This dictionary documents the sample retail star schema. Each CSV contains 50 records so the repository can be reviewed without external data dependencies.
+
+## FactSales
+
+| Column Name | Data Type | Description | Primary Key | Foreign Keys |
+|---|---|---|---|---|
+| SalesKey | INT | Surrogate key for each sales transaction line. | PK | - |
+| OrderID | VARCHAR(30) | Business order identifier from POS/e-commerce source. | - | - |
+| DateKey | INT | Date of sale linked to DimDate. | - | DimDate.DateKey |
+| CustomerKey | INT | Purchasing customer linked to DimCustomer. | - | DimCustomer.CustomerKey |
+| ProductKey | INT | Product sold linked to DimProduct. | - | DimProduct.ProductKey |
+| StoreKey | INT | Selling store or fulfillment location linked to DimStore. | - | DimStore.StoreKey |
+| RegionKey | INT | Region of sale linked to DimRegion. | - | DimRegion.RegionKey |
+| Quantity | INT | Units sold. | - | - |
+| UnitPrice | DECIMAL(10,2) | List price at time of sale. | - | - |
+| DiscountAmount | DECIMAL(10,2) | Promotion or markdown applied to the sales line. | - | - |
+| SalesAmount | DECIMAL(12,2) | Net revenue after discount. | - | - |
+| CostAmount | DECIMAL(12,2) | Cost of goods sold. | - | - |
+| ProfitAmount | DECIMAL(12,2) | SalesAmount minus CostAmount. | - | - |
+| PaymentMethod | VARCHAR(40) | Tender type used by the customer. | - | - |
+| OrderChannel | VARCHAR(30) | Store, web, mobile app, or marketplace. | - | - |
+| FulfillmentStatus | VARCHAR(40) | Current fulfillment state. | - | - |
+
+## FactReturns
+
+| Column Name | Data Type | Description | Primary Key | Foreign Keys |
+|---|---|---|---|---|
+| ReturnKey | INT | Surrogate key for each return transaction. | PK | - |
+| ReturnID | VARCHAR(30) | Business return authorization number. | - | - |
+| SalesKey | INT | Original sale linked to FactSales. | - | FactSales.SalesKey |
+| DateKey | INT | Return transaction date linked to DimDate. | - | DimDate.DateKey |
+| CustomerKey | INT | Returning customer linked to DimCustomer. | - | DimCustomer.CustomerKey |
+| ProductKey | INT | Returned product linked to DimProduct. | - | DimProduct.ProductKey |
+| StoreKey | INT | Store or channel accepting the return. | - | DimStore.StoreKey |
+| QuantityReturned | INT | Units returned. | - | - |
+| ReturnAmount | DECIMAL(12,2) | Refund value associated with the return. | - | - |
+| ReturnReason | VARCHAR(80) | Reason captured by service or POS team. | - | - |
+| RefundStatus | VARCHAR(40) | Refunded, pending, store credit, or rejected. | - | - |
+
+## FactInventory
+
+| Column Name | Data Type | Description | Primary Key | Foreign Keys |
+|---|---|---|---|---|
+| InventoryKey | INT | Surrogate key for an inventory snapshot. | PK | - |
+| DateKey | INT | Snapshot date linked to DimDate. | - | DimDate.DateKey |
+| ProductKey | INT | Product counted in inventory linked to DimProduct. | - | DimProduct.ProductKey |
+| StoreKey | INT | Store where stock is held linked to DimStore. | - | DimStore.StoreKey |
+| RegionKey | INT | Regional market for the inventory location. | - | DimRegion.RegionKey |
+| OnHandQty | INT | Sellable inventory available at snapshot time. | - | - |
+| ReorderPoint | INT | Threshold that triggers replenishment. | - | - |
+| SafetyStockQty | INT | Buffer stock required to absorb demand variability. | - | - |
+| UnitsSoldLast30Days | INT | Rolling 30-day demand proxy. | - | - |
+| UnitsReceived | INT | Units received since previous snapshot. | - | - |
+| StockStatus | VARCHAR(30) | Healthy, reorder, critical, or overstock. | - | - |
+
+## DimCustomer
+
+| Column Name | Data Type | Description | Primary Key | Foreign Keys |
+|---|---|---|---|---|
+| CustomerKey | INT | Surrogate key for each customer. | PK | - |
+| CustomerID | VARCHAR(30) | Source-system customer identifier. | - | - |
+| FirstName | VARCHAR(50) | Customer first name. | - | - |
+| LastName | VARCHAR(50) | Customer last name. | - | - |
+| Gender | VARCHAR(30) | Self-reported gender category. | - | - |
+| Age | INT | Customer age at extract date. | - | - |
+| Email | VARCHAR(120) | Customer email address. | - | - |
+| City | VARCHAR(60) | Customer city. | - | - |
+| StateName | VARCHAR(60) | Customer state. | - | - |
+| RegionKey | INT | Home region linked to DimRegion. | - | DimRegion.RegionKey |
+| Segment | VARCHAR(40) | CRM segment used for marketing and retention. | - | - |
+| LoyaltyTier | VARCHAR(30) | Current loyalty membership tier. | - | - |
+| SignupDate | DATE | Date the customer joined the loyalty/customer program. | - | - |
+| MarketingOptIn | BIT | Whether customer opted into campaigns. | - | - |
+
+## DimProduct
+
+| Column Name | Data Type | Description | Primary Key | Foreign Keys |
+|---|---|---|---|---|
+| ProductKey | INT | Surrogate key for each product. | PK | - |
+| SKU | VARCHAR(30) | Stock keeping unit. | - | - |
+| ProductName | VARCHAR(120) | Commercial product name. | - | - |
+| Category | VARCHAR(50) | Top-level merchandising category. | - | - |
+| Subcategory | VARCHAR(50) | Merchandising subcategory. | - | - |
+| Brand | VARCHAR(60) | Product brand. | - | - |
+| UnitCost | DECIMAL(10,2) | Standard product cost. | - | - |
+| ListPrice | DECIMAL(10,2) | Standard selling price. | - | - |
+| LaunchDate | DATE | First active sale date. | - | - |
+| DiscontinuedFlag | BIT | 1 when product is discontinued. | - | - |
+
+## DimStore
+
+| Column Name | Data Type | Description | Primary Key | Foreign Keys |
+|---|---|---|---|---|
+| StoreKey | INT | Surrogate key for each store or fulfillment node. | PK | - |
+| StoreCode | VARCHAR(20) | Source-system store identifier. | - | - |
+| StoreName | VARCHAR(120) | Store name shown to operations leaders. | - | - |
+| RegionKey | INT | Market region linked to DimRegion. | - | DimRegion.RegionKey |
+| StoreType | VARCHAR(40) | Store format. | - | - |
+| OpeningDate | DATE | Store opening date. | - | - |
+| SquareFeet | INT | Approximate selling area. | - | - |
+| StoreManager | VARCHAR(80) | Store general manager. | - | - |
+| Channel | VARCHAR(40) | Dominant selling or fulfillment channel. | - | - |
+| Status | VARCHAR(30) | Active, remodeling, closed, etc. | - | - |
+
+## DimRegion
+
+| Column Name | Data Type | Description | Primary Key | Foreign Keys |
+|---|---|---|---|---|
+| RegionKey | INT | Surrogate key for geographic market. | PK | - |
+| RegionName | VARCHAR(30) | Executive region rollup. | - | - |
+| TerritoryName | VARCHAR(80) | Operating territory. | - | - |
+| Country | VARCHAR(60) | Country. | - | - |
+| StateName | VARCHAR(60) | State or province. | - | - |
+| City | VARCHAR(60) | Principal market city. | - | - |
+| MarketTier | VARCHAR(20) | Market maturity and revenue tier. | - | - |
+| RegionalManager | VARCHAR(80) | Regional leader accountable for performance. | - | - |
+
+## DimDate
+
+| Column Name | Data Type | Description | Primary Key | Foreign Keys |
+|---|---|---|---|---|
+| DateKey | INT | Smart date key in YYYYMMDD format. | PK | - |
+| FullDate | DATE | Calendar date. | - | - |
+| DayName | VARCHAR(12) | Day of week. | - | - |
+| WeekNumber | INT | Week number in the year. | - | - |
+| MonthNumber | INT | Month number. | - | - |
+| MonthName | VARCHAR(12) | Month name. | - | - |
+| QuarterNumber | INT | Calendar quarter. | - | - |
+| YearNumber | INT | Calendar year. | - | - |
+| IsWeekend | BIT | Weekend indicator. | - | - |
+| FiscalYear | INT | Fiscal year assuming April-March fiscal calendar. | - | - |

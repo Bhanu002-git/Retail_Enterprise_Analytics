@@ -1,0 +1,65 @@
+erDiagram
+    DimDate ||--o{ FactSales : DateKey
+    DimDate ||--o{ FactReturns : DateKey
+    DimDate ||--o{ FactInventory : DateKey
+    DimCustomer ||--o{ FactSales : CustomerKey
+    DimCustomer ||--o{ FactReturns : CustomerKey
+    DimProduct ||--o{ FactSales : ProductKey
+    DimProduct ||--o{ FactReturns : ProductKey
+    DimProduct ||--o{ FactInventory : ProductKey
+    DimStore ||--o{ FactSales : StoreKey
+    DimStore ||--o{ FactReturns : StoreKey
+    DimStore ||--o{ FactInventory : StoreKey
+    DimRegion ||--o{ DimCustomer : RegionKey
+    DimRegion ||--o{ DimStore : RegionKey
+    DimRegion ||--o{ FactSales : RegionKey
+    DimRegion ||--o{ FactInventory : RegionKey
+
+    FactSales {
+        int SalesKey PK
+        int DateKey FK
+        int CustomerKey FK
+        int ProductKey FK
+        int StoreKey FK
+        int RegionKey FK
+        decimal SalesAmount
+        decimal ProfitAmount
+    }
+    FactReturns {
+        int ReturnKey PK
+        int SalesKey FK
+        int DateKey FK
+        int CustomerKey FK
+        int ProductKey FK
+        decimal ReturnAmount
+    }
+    FactInventory {
+        int InventoryKey PK
+        int DateKey FK
+        int ProductKey FK
+        int StoreKey FK
+        int RegionKey FK
+        int OnHandQty
+    }
+    DimDate {
+        int DateKey PK
+        date FullDate
+    }
+    DimCustomer {
+        int CustomerKey PK
+        varchar CustomerID
+        int RegionKey FK
+    }
+    DimProduct {
+        int ProductKey PK
+        varchar SKU
+    }
+    DimStore {
+        int StoreKey PK
+        varchar StoreCode
+        int RegionKey FK
+    }
+    DimRegion {
+        int RegionKey PK
+        varchar RegionName
+    }

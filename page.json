@@ -1,0 +1,13 @@
+# Open This Power BI Project
+
+Open this file in Power BI Desktop:
+
+`RetailEnterpriseAnalytics.pbip`
+
+If Desktop asks to apply pending changes or refresh data, choose **Apply changes** / **Refresh**.
+
+Power BI's local file connector requires an absolute root path. The model uses this project root, then appends the relative `Dataset` folder and CSV filename in each query:
+
+`C:\Users\ironside\Downloads\New folder (2)\Retail-Enterprise-Analytics`
+
+The report contains five named dashboard pages as placeholders. The data model, relationships, and measures are already defined so you can immediately build visuals.

@@ -1,0 +1,128 @@
+# Power Query Transformation Guide
+
+## Folder Connection Pattern
+
+1. Open Power BI Desktop.
+2. Select `Get Data` > `Text/CSV`.
+3. Load each CSV from the `Dataset` folder.
+4. Use `Transform Data` before loading into the model.
+5. Apply the data type map from `Dataset/data_dictionary.md`.
+
+## Transformation Standards
+
+- Promote first row as headers.
+- Trim and clean text columns.
+- Set fact numeric fields to fixed decimal or whole number.
+- Set date fields to Date type.
+- Replace blank categorical values with `Unknown`.
+- Remove duplicate dimension rows by natural/business key.
+- Keep surrogate keys as whole numbers.
+
+## Example M Query: FactSales
+
+```powerquery
+let
+    ProjectRoot = "C:\Users\ironside\Downloads\New folder (2)\Retail-Enterprise-Analytics",
+    Source = Csv.Document(
+        File.Contents(ProjectRoot & "\Dataset\FactSales.csv"),
+        [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]
+    ),
+    PromotedHeaders = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+    ChangedType = Table.TransformColumnTypes(
+        PromotedHeaders,
+        {
+            {"SalesKey", Int64.Type},
+            {"OrderID", type text},
+            {"DateKey", Int64.Type},
+            {"CustomerKey", Int64.Type},
+            {"ProductKey", Int64.Type},
+            {"StoreKey", Int64.Type},
+            {"RegionKey", Int64.Type},
+            {"Quantity", Int64.Type},
+            {"UnitPrice", Currency.Type},
+            {"DiscountAmount", Currency.Type},
+            {"SalesAmount", Currency.Type},
+            {"CostAmount", Currency.Type},
+            {"ProfitAmount", Currency.Type},
+            {"PaymentMethod", type text},
+            {"OrderChannel", type text},
+            {"FulfillmentStatus", type text}
+        }
+    ),
+    TrimmedText = Table.TransformColumns(
+        ChangedType,
+        {
+            {"OrderID", Text.Trim, type text},
+            {"PaymentMethod", Text.Trim, type text},
+            {"OrderChannel", Text.Trim, type text},
+            {"FulfillmentStatus", Text.Trim, type text}
+        }
+    ),
+    RemovedDuplicates = Table.Distinct(TrimmedText, {"SalesKey"}),
+    ValidatedAmounts = Table.AddColumn(
+        RemovedDuplicates,
+        "AmountValidationStatus",
+        each if Number.Abs(([Quantity] * [UnitPrice] - [DiscountAmount]) - [SalesAmount]) <= 0.01
+             and Number.Abs(([SalesAmount] - [CostAmount]) - [ProfitAmount]) <= 0.01
+             then "Valid"
+             else "Review",
+        type text
+    )
+in
+    ValidatedAmounts
+```
+
+## Example M Query: Dimension De-Duplication
+
+```powerquery
+let
+    ProjectRoot = "C:\Users\ironside\Downloads\New folder (2)\Retail-Enterprise-Analytics",
+    Source = Csv.Document(
+        File.Contents(ProjectRoot & "\Dataset\DimProduct.csv"),
+        [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]
+    ),
+    PromotedHeaders = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+    ChangedType = Table.TransformColumnTypes(
+        PromotedHeaders,
+        {
+            {"ProductKey", Int64.Type},
+            {"SKU", type text},
+            {"ProductName", type text},
+            {"Category", type text},
+            {"Subcategory", type text},
+            {"Brand", type text},
+            {"UnitCost", Currency.Type},
+            {"ListPrice", Currency.Type},
+            {"LaunchDate", type date},
+            {"DiscontinuedFlag", Int64.Type}
+        }
+    ),
+    CleanedText = Table.TransformColumns(
+        ChangedType,
+        {
+            {"SKU", each Text.Upper(Text.Trim(_)), type text},
+            {"ProductName", each Text.Proper(Text.Trim(_)), type text},
+            {"Category", each Text.Proper(Text.Trim(_)), type text},
+            {"Subcategory", each Text.Proper(Text.Trim(_)), type text},
+            {"Brand", each Text.Trim(_), type text}
+        }
+    ),
+    RemovedDuplicateSku = Table.Distinct(CleanedText, {"SKU"}),
+    AddedMarginBand = Table.AddColumn(
+        RemovedDuplicateSku,
+        "StandardMarginBand",
+        each if ([ListPrice] - [UnitCost]) / [ListPrice] >= 0.40 then "High"
+             else if ([ListPrice] - [UnitCost]) / [ListPrice] >= 0.25 then "Medium"
+             else "Low",
+        type text
+    )
+in
+    AddedMarginBand
+```
+
+## Recommended Query Groups
+
+- `Staging`: raw CSV imports with type changes.
+- `Dimensions`: business-clean dimensions loaded to the model.
+- `Facts`: cleansed fact tables loaded to the model.
+- `Data Quality`: validation queries disabled for report load but visible to developers.

@@ -1,0 +1,51 @@
+StoreKey,StoreCode,StoreName,RegionKey,StoreType,OpeningDate,SquareFeet,StoreManager,Channel,Status
+1,STR-1001,RetailPro Seattle Neighborhood,1,Neighborhood,2015-03-04,19375,Priya Sharma,Omnichannel,Active
+2,STR-1002,RetailPro San Francisco Outlet,2,Outlet,2016-05-07,20750,Marcus Allen,E-Commerce Fulfillment,Active
+3,STR-1003,RetailPro Los Angeles Flagship,3,Flagship,2017-07-10,22125,Elena Garcia,Brick-and-Mortar,Active
+4,STR-1004,RetailPro Riverside Urban Express,4,Urban Express,2018-09-13,23500,Daniel Kim,Omnichannel,Active
+5,STR-1005,RetailPro Denver Supercenter,5,Supercenter,2019-11-16,24875,Rachel Scott,E-Commerce Fulfillment,Active
+6,STR-1006,RetailPro Phoenix Neighborhood,6,Neighborhood,2020-01-19,26250,Victor Nguyen,Brick-and-Mortar,Active
+7,STR-1007,RetailPro Las Vegas Outlet,7,Outlet,2021-03-22,27625,Hannah Lewis,Omnichannel,Active
+8,STR-1008,RetailPro Portland Flagship,8,Flagship,2022-05-25,29000,Owen Carter,E-Commerce Fulfillment,Active
+9,STR-1009,RetailPro Salt Lake City Urban Express,9,Urban Express,2014-07-02,30375,Nora Adams,Brick-and-Mortar,Active
+10,STR-1010,RetailPro Anchorage Supercenter,10,Supercenter,2015-09-05,31750,Jordan Hayes,Omnichannel,Active
+11,STR-1011,RetailPro Dallas Neighborhood,11,Neighborhood,2016-11-08,33125,Priya Sharma,E-Commerce Fulfillment,Active
+12,STR-1012,RetailPro Houston Outlet,12,Outlet,2017-01-11,34500,Marcus Allen,Brick-and-Mortar,Active
+13,STR-1013,RetailPro Austin Flagship,13,Flagship,2018-03-14,35875,Elena Garcia,Omnichannel,Active
+14,STR-1014,RetailPro Miami Urban Express,14,Urban Express,2019-05-17,37250,Daniel Kim,E-Commerce Fulfillment,Active
+15,STR-1015,RetailPro Tampa Supercenter,15,Supercenter,2020-07-20,38625,Rachel Scott,Brick-and-Mortar,Active
+16,STR-1016,RetailPro Atlanta Neighborhood,16,Neighborhood,2021-09-23,40000,Victor Nguyen,Omnichannel,Active
+17,STR-1017,RetailPro Charlotte Outlet,17,Outlet,2022-11-26,41375,Hannah Lewis,E-Commerce Fulfillment,Remodeling
+18,STR-1018,RetailPro Nashville Flagship,18,Flagship,2014-01-03,42750,Owen Carter,Brick-and-Mortar,Active
+19,STR-1019,RetailPro New Orleans Urban Express,19,Urban Express,2015-03-06,44125,Nora Adams,Omnichannel,Active
+20,STR-1020,RetailPro Oklahoma City Supercenter,20,Supercenter,2016-05-09,45500,Jordan Hayes,E-Commerce Fulfillment,Active
+21,STR-1021,RetailPro New York Neighborhood,21,Neighborhood,2017-07-12,46875,Priya Sharma,Brick-and-Mortar,Active
+22,STR-1022,RetailPro Boston Outlet,22,Outlet,2018-09-15,48250,Marcus Allen,Omnichannel,Active
+23,STR-1023,RetailPro Philadelphia Flagship,23,Flagship,2019-11-18,49625,Elena Garcia,E-Commerce Fulfillment,Active
+24,STR-1024,RetailPro Washington Urban Express,24,Urban Express,2020-01-21,51000,Daniel Kim,Brick-and-Mortar,Active
+25,STR-1025,RetailPro Newark Supercenter,25,Supercenter,2021-03-24,52375,Rachel Scott,Omnichannel,Active
+26,STR-1026,RetailPro Baltimore Neighborhood,26,Neighborhood,2022-05-01,53750,Victor Nguyen,E-Commerce Fulfillment,Active
+27,STR-1027,RetailPro Richmond Outlet,27,Outlet,2014-07-04,55125,Hannah Lewis,Brick-and-Mortar,Active
+28,STR-1028,RetailPro Hartford Flagship,28,Flagship,2015-09-07,56500,Owen Carter,Omnichannel,Active
+29,STR-1029,RetailPro Providence Urban Express,29,Urban Express,2016-11-10,57875,Nora Adams,E-Commerce Fulfillment,Active
+30,STR-1030,RetailPro Portland Supercenter,30,Supercenter,2017-01-13,59250,Jordan Hayes,Brick-and-Mortar,Active
+31,STR-1031,RetailPro Chicago Neighborhood,31,Neighborhood,2018-03-16,60625,Priya Sharma,Omnichannel,Active
+32,STR-1032,RetailPro Detroit Outlet,32,Outlet,2019-05-19,62000,Marcus Allen,E-Commerce Fulfillment,Active
+33,STR-1033,RetailPro Columbus Flagship,33,Flagship,2020-07-22,63375,Elena Garcia,Brick-and-Mortar,Active
+34,STR-1034,RetailPro Indianapolis Urban Express,34,Urban Express,2021-09-25,64750,Daniel Kim,Omnichannel,Remodeling
+35,STR-1035,RetailPro Milwaukee Supercenter,35,Supercenter,2022-11-02,66125,Rachel Scott,E-Commerce Fulfillment,Active
+36,STR-1036,RetailPro Minneapolis Neighborhood,36,Neighborhood,2014-01-05,67500,Victor Nguyen,Brick-and-Mortar,Active
+37,STR-1037,RetailPro St. Louis Outlet,37,Outlet,2015-03-08,68875,Hannah Lewis,Omnichannel,Active
+38,STR-1038,RetailPro Wichita Flagship,38,Flagship,2016-05-11,70250,Owen Carter,E-Commerce Fulfillment,Active
+39,STR-1039,RetailPro Des Moines Urban Express,39,Urban Express,2017-07-14,71625,Nora Adams,Brick-and-Mortar,Active
+40,STR-1040,RetailPro Omaha Supercenter,40,Supercenter,2018-09-17,73000,Jordan Hayes,Omnichannel,Active
+41,STR-1041,RetailPro Fargo Neighborhood,41,Neighborhood,2019-11-20,74375,Priya Sharma,E-Commerce Fulfillment,Active
+42,STR-1042,RetailPro Sioux Falls Outlet,42,Outlet,2020-01-23,75750,Marcus Allen,Brick-and-Mortar,Active
+43,STR-1043,RetailPro Billings Flagship,43,Flagship,2021-03-26,77125,Elena Garcia,Omnichannel,Active
+44,STR-1044,RetailPro Boise Urban Express,44,Urban Express,2022-05-03,78500,Daniel Kim,E-Commerce Fulfillment,Active
+45,STR-1045,RetailPro Cheyenne Supercenter,45,Supercenter,2014-07-06,79875,Rachel Scott,Brick-and-Mortar,Active
+46,STR-1046,RetailPro Burlington Neighborhood,46,Neighborhood,2015-09-09,19250,Victor Nguyen,Omnichannel,Active
+47,STR-1047,RetailPro Manchester Outlet,47,Outlet,2016-11-12,20625,Hannah Lewis,E-Commerce Fulfillment,Active
+48,STR-1048,RetailPro Buffalo Flagship,48,Flagship,2017-01-15,22000,Owen Carter,Brick-and-Mortar,Active
+49,STR-1049,RetailPro Grand Rapids Urban Express,49,Urban Express,2018-03-18,23375,Nora Adams,Omnichannel,Active
+50,STR-1050,RetailPro Duluth Supercenter,50,Supercenter,2019-05-21,24750,Jordan Hayes,E-Commerce Fulfillment,Active

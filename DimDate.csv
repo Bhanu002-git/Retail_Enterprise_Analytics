@@ -1,0 +1,51 @@
+CustomerKey,CustomerID,FirstName,LastName,Gender,Age,Email,City,StateName,RegionKey,Segment,LoyaltyTier,SignupDate,MarketingOptIn
+1,CUST-50001,Amelia,Anderson,Male,25,amelia.anderson@example.com,Los Angeles,California,3,Loyalist,Gold,2021-08-12,1
+2,CUST-50002,Benjamin,Baker,Non-Binary,32,benjamin.baker@example.com,Phoenix,Arizona,6,Value Seeker,Silver,2022-03-23,1
+3,CUST-50003,Charlotte,Carter,Prefer Not To Say,39,charlotte.carter@example.com,Salt Lake City,Utah,9,New Customer,Bronze,2023-10-08,1
+4,CUST-50004,David,Diaz,Female,46,david.diaz@example.com,Houston,Texas,12,At Risk,Platinum,2024-05-19,1
+5,CUST-50005,Emma,Evans,Male,53,emma.evans@example.com,Tampa,Florida,15,VIP,Gold,2020-12-04,1
+6,CUST-50006,Felix,Foster,Non-Binary,60,felix.foster@example.com,Nashville,Tennessee,18,Loyalist,Silver,2021-07-15,0
+7,CUST-50007,Grace,Gupta,Prefer Not To Say,67,grace.gupta@example.com,New York,New York,21,Value Seeker,Bronze,2022-02-26,1
+8,CUST-50008,Henry,Harris,Female,20,henry.harris@example.com,Washington,District of Columbia,24,New Customer,Platinum,2023-09-11,1
+9,CUST-50009,Iris,Iqbal,Male,27,iris.iqbal@example.com,Richmond,Virginia,27,At Risk,Gold,2024-04-22,1
+10,CUST-50010,Jacob,Jones,Non-Binary,34,jacob.jones@example.com,Portland,Maine,30,VIP,Silver,2020-11-07,1
+11,CUST-50011,Kara,Kapoor,Prefer Not To Say,41,kara.kapoor@example.com,Columbus,Ohio,33,Loyalist,Bronze,2021-06-18,1
+12,CUST-50012,Leo,Lopez,Female,48,leo.lopez@example.com,Minneapolis,Minnesota,36,Value Seeker,Platinum,2022-01-03,0
+13,CUST-50013,Maya,Morgan,Male,55,maya.morgan@example.com,Des Moines,Iowa,39,New Customer,Gold,2023-08-14,1
+14,CUST-50014,Nathan,Nguyen,Non-Binary,62,nathan.nguyen@example.com,Sioux Falls,South Dakota,42,At Risk,Silver,2024-03-25,1
+15,CUST-50015,Olivia,Owens,Prefer Not To Say,69,olivia.owens@example.com,Cheyenne,Wyoming,45,VIP,Bronze,2020-10-10,1
+16,CUST-50016,Peter,Parker,Female,22,peter.parker@example.com,Buffalo,New York,48,Loyalist,Platinum,2021-05-21,1
+17,CUST-50017,Quinn,Quintero,Male,29,quinn.quintero@example.com,Seattle,Washington,1,Value Seeker,Gold,2022-12-06,1
+18,CUST-50018,Riley,Robinson,Non-Binary,36,riley.robinson@example.com,Riverside,California,4,New Customer,Silver,2023-07-17,0
+19,CUST-50019,Sara,Singh,Prefer Not To Say,43,sara.singh@example.com,Las Vegas,Nevada,7,At Risk,Bronze,2024-02-02,1
+20,CUST-50020,Theo,Turner,Female,50,theo.turner@example.com,Anchorage,Alaska,10,VIP,Platinum,2020-09-13,1
+21,CUST-50021,Uma,Usman,Male,57,uma.usman@example.com,Austin,Texas,13,Loyalist,Gold,2021-04-24,1
+22,CUST-50022,Vikram,Vasquez,Non-Binary,64,vikram.vasquez@example.com,Atlanta,Georgia,16,Value Seeker,Silver,2022-11-09,1
+23,CUST-50023,Wendy,White,Prefer Not To Say,71,wendy.white@example.com,New Orleans,Louisiana,19,New Customer,Bronze,2023-06-20,1
+24,CUST-50024,Xavier,Xu,Female,24,xavier.xu@example.com,Boston,Massachusetts,22,At Risk,Platinum,2024-01-05,0
+25,CUST-50025,Yara,Young,Male,31,yara.young@example.com,Newark,New Jersey,25,VIP,Gold,2020-08-16,1
+26,CUST-50026,Zane,Zimmer,Non-Binary,38,zane.zimmer@example.com,Hartford,Connecticut,28,Loyalist,Silver,2021-03-01,1
+27,CUST-50027,Aisha,Ali,Prefer Not To Say,45,aisha.ali@example.com,Chicago,Illinois,31,Value Seeker,Bronze,2022-10-12,1
+28,CUST-50028,Caleb,Brown,Female,52,caleb.brown@example.com,Indianapolis,Indiana,34,New Customer,Platinum,2023-05-23,1
+29,CUST-50029,Diana,Chandra,Male,59,diana.chandra@example.com,St. Louis,Missouri,37,At Risk,Gold,2024-12-08,1
+30,CUST-50030,Eli,Duncan,Non-Binary,66,eli.duncan@example.com,Omaha,Nebraska,40,VIP,Silver,2020-07-19,0
+31,CUST-50031,Fatima,Edwards,Prefer Not To Say,19,fatima.edwards@example.com,Billings,Montana,43,Loyalist,Bronze,2021-02-04,1
+32,CUST-50032,Gavin,Flores,Female,26,gavin.flores@example.com,Burlington,Vermont,46,Value Seeker,Platinum,2022-09-15,1
+33,CUST-50033,Harper,Green,Male,33,harper.green@example.com,Grand Rapids,Michigan,49,New Customer,Gold,2023-04-26,1
+34,CUST-50034,Ivan,Hill,Non-Binary,40,ivan.hill@example.com,San Francisco,California,2,At Risk,Silver,2024-11-11,1
+35,CUST-50035,Jasmine,Irwin,Prefer Not To Say,47,jasmine.irwin@example.com,Denver,Colorado,5,VIP,Bronze,2020-06-22,1
+36,CUST-50036,Kai,Jain,Female,54,kai.jain@example.com,Portland,Oregon,8,Loyalist,Platinum,2021-01-07,0
+37,CUST-50037,Lina,Kim,Male,61,lina.kim@example.com,Dallas,Texas,11,Value Seeker,Gold,2022-08-18,1
+38,CUST-50038,Mateo,Lee,Non-Binary,68,mateo.lee@example.com,Miami,Florida,14,New Customer,Silver,2023-03-03,1
+39,CUST-50039,Nina,Mendez,Prefer Not To Say,21,nina.mendez@example.com,Charlotte,North Carolina,17,At Risk,Bronze,2024-10-14,1
+40,CUST-50040,Oscar,Nelson,Female,28,oscar.nelson@example.com,Oklahoma City,Oklahoma,20,VIP,Platinum,2020-05-25,1
+41,CUST-50041,Paula,Ortiz,Male,35,paula.ortiz@example.com,Philadelphia,Pennsylvania,23,Loyalist,Gold,2021-12-10,1
+42,CUST-50042,Reed,Price,Non-Binary,42,reed.price@example.com,Baltimore,Maryland,26,Value Seeker,Silver,2022-07-21,0
+43,CUST-50043,Sonia,Rao,Prefer Not To Say,49,sonia.rao@example.com,Providence,Rhode Island,29,New Customer,Bronze,2023-02-06,1
+44,CUST-50044,Tara,Stone,Female,56,tara.stone@example.com,Detroit,Michigan,32,At Risk,Platinum,2024-09-17,1
+45,CUST-50045,Uday,Thomas,Male,63,uday.thomas@example.com,Milwaukee,Wisconsin,35,VIP,Gold,2020-04-02,1
+46,CUST-50046,Valerie,Upton,Non-Binary,70,valerie.upton@example.com,Wichita,Kansas,38,Loyalist,Silver,2021-11-13,1
+47,CUST-50047,Will,Verma,Prefer Not To Say,23,will.verma@example.com,Fargo,North Dakota,41,Value Seeker,Bronze,2022-06-24,1
+48,CUST-50048,Yusuf,Walker,Female,30,yusuf.walker@example.com,Boise,Idaho,44,New Customer,Platinum,2023-01-09,0
+49,CUST-50049,Zoey,Yilmaz,Male,37,zoey.yilmaz@example.com,Manchester,New Hampshire,47,At Risk,Gold,2024-08-20,1
+50,CUST-50050,Aaron,Zhang,Non-Binary,44,aaron.zhang@example.com,Duluth,Minnesota,50,VIP,Silver,2020-03-05,1

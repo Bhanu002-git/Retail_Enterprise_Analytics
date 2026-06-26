@@ -1,0 +1,51 @@
+RegionKey,RegionName,TerritoryName,Country,StateName,City,MarketTier,RegionalManager
+1,West,Pacific Northwest,United States,Washington,Seattle,Tier 2,Liam Bennett
+2,West,Bay Area,United States,California,San Francisco,Tier 3,Mia Rodriguez
+3,West,Southern California,United States,California,Los Angeles,Tier 1,Noah Patel
+4,West,Inland Empire,United States,California,Riverside,Tier 2,Sophia Wilson
+5,West,Rocky Mountain,United States,Colorado,Denver,Tier 3,Ethan Brooks
+6,West,Desert Southwest,United States,Arizona,Phoenix,Tier 1,Olivia Chen
+7,West,Nevada Valley,United States,Nevada,Las Vegas,Tier 2,Lucas Martin
+8,West,Oregon Trail,United States,Oregon,Portland,Tier 3,Isabella Khan
+9,West,Utah Wasatch,United States,Utah,Salt Lake City,Tier 1,Mason Reed
+10,West,Alaska Frontier,United States,Alaska,Anchorage,Tier 2,Ava Coleman
+11,South,North Texas,United States,Texas,Dallas,Tier 3,Liam Bennett
+12,South,Gulf Coast,United States,Texas,Houston,Tier 1,Mia Rodriguez
+13,South,Central Texas,United States,Texas,Austin,Tier 2,Noah Patel
+14,South,Florida Atlantic,United States,Florida,Miami,Tier 3,Sophia Wilson
+15,South,Florida Gulf,United States,Florida,Tampa,Tier 1,Ethan Brooks
+16,South,Georgia Metro,United States,Georgia,Atlanta,Tier 2,Olivia Chen
+17,South,Carolinas,United States,North Carolina,Charlotte,Tier 3,Lucas Martin
+18,South,Tennessee Valley,United States,Tennessee,Nashville,Tier 1,Isabella Khan
+19,South,Louisiana Delta,United States,Louisiana,New Orleans,Tier 2,Mason Reed
+20,South,Oklahoma Plains,United States,Oklahoma,Oklahoma City,Tier 3,Ava Coleman
+21,East,New York Metro,United States,New York,New York,Tier 1,Liam Bennett
+22,East,New England,United States,Massachusetts,Boston,Tier 2,Mia Rodriguez
+23,East,Mid Atlantic,United States,Pennsylvania,Philadelphia,Tier 3,Noah Patel
+24,East,Capital Beltway,United States,District of Columbia,Washington,Tier 1,Sophia Wilson
+25,East,New Jersey Shore,United States,New Jersey,Newark,Tier 2,Ethan Brooks
+26,East,Maryland Harbor,United States,Maryland,Baltimore,Tier 3,Olivia Chen
+27,East,Virginia Tidewater,United States,Virginia,Richmond,Tier 1,Lucas Martin
+28,East,Connecticut Valley,United States,Connecticut,Hartford,Tier 2,Isabella Khan
+29,East,Rhode Island Bay,United States,Rhode Island,Providence,Tier 3,Mason Reed
+30,East,Maine Coast,United States,Maine,Portland,Tier 1,Ava Coleman
+31,Central,Great Lakes,United States,Illinois,Chicago,Tier 2,Liam Bennett
+32,Central,Michigan Metro,United States,Michigan,Detroit,Tier 3,Mia Rodriguez
+33,Central,Ohio Valley,United States,Ohio,Columbus,Tier 1,Noah Patel
+34,Central,Indiana Crossroads,United States,Indiana,Indianapolis,Tier 2,Sophia Wilson
+35,Central,Wisconsin Dairyland,United States,Wisconsin,Milwaukee,Tier 3,Ethan Brooks
+36,Central,Minnesota Northstar,United States,Minnesota,Minneapolis,Tier 1,Olivia Chen
+37,Central,Missouri Gateway,United States,Missouri,St. Louis,Tier 2,Lucas Martin
+38,Central,Kansas Prairie,United States,Kansas,Wichita,Tier 3,Isabella Khan
+39,Central,Iowa Heartland,United States,Iowa,Des Moines,Tier 1,Mason Reed
+40,Central,Nebraska River,United States,Nebraska,Omaha,Tier 2,Ava Coleman
+41,North,North Dakota Plains,United States,North Dakota,Fargo,Tier 3,Liam Bennett
+42,North,South Dakota Hills,United States,South Dakota,Sioux Falls,Tier 1,Mia Rodriguez
+43,North,Montana Big Sky,United States,Montana,Billings,Tier 2,Noah Patel
+44,North,Idaho Treasure,United States,Idaho,Boise,Tier 3,Sophia Wilson
+45,North,Wyoming Range,United States,Wyoming,Cheyenne,Tier 1,Ethan Brooks
+46,North,Vermont Green,United States,Vermont,Burlington,Tier 2,Olivia Chen
+47,North,New Hampshire Lakes,United States,New Hampshire,Manchester,Tier 3,Lucas Martin
+48,North,Upstate New York,United States,New York,Buffalo,Tier 1,Isabella Khan
+49,North,Northern Michigan,United States,Michigan,Grand Rapids,Tier 2,Mason Reed
+50,North,Northern Minnesota,United States,Minnesota,Duluth,Tier 3,Ava Coleman

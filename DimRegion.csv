@@ -1,0 +1,51 @@
+ProductKey,SKU,ProductName,Category,Subcategory,Brand,UnitCost,ListPrice,LaunchDate,DiscontinuedFlag
+1,SKU-GRO-10001,Organic Cold Brew 12 Pack,Grocery,Beverages,NorthFork,12.15,23.37,2022-06-08,0
+2,SKU-GRO-10002,Protein Trail Mix,Grocery,Snacks,GoodField,16.09,28.74,2023-11-15,0
+3,SKU-GRO-10003,Artisan Pasta Bundle,Grocery,Pantry,CasaNova,20.47,34.11,2024-04-22,0
+4,SKU-GRO-10004,Plant-Based Entree,Grocery,Frozen,GreenTable,25.27,39.48,2021-09-04,0
+5,SKU-GRO-10005,Greek Yogurt Family Pack,Grocery,Dairy,DairyWell,12.53,26.1,2022-02-11,0
+6,SKU-APP-10006,Performance Polo,Apparel,Menswear,ThreadLab,43.59,83.83,2023-07-18,0
+7,SKU-APP-10007,Stretch Denim Jacket,Apparel,Womenswear,UrbanWeave,33.32,59.5,2024-12-25,0
+8,SKU-APP-10008,Everyday Running Shoe,Apparel,Footwear,StrideMax,40.76,67.93,2021-05-07,0
+9,SKU-APP-10009,School Uniform Set,Apparel,Kids,BrightKids,48.87,76.36,2022-10-14,0
+10,SKU-APP-10010,Leather Travel Wallet,Apparel,Accessories,NobleCarry,31.7,66.04,2023-03-21,0
+11,SKU-ELE-10011,14 Inch Productivity Laptop,Electronics,Computing,VoltEdge,136.32,262.15,2024-08-03,0
+12,SKU-ELE-10012,Noise Cancelling Headphones,Electronics,Audio,SoundForge,158.48,283.0,2021-01-10,1
+13,SKU-ELE-10013,5G Smartphone 128GB,Electronics,Mobile,NovaCell,182.31,303.85,2022-06-17,0
+14,SKU-ELE-10014,Wireless Game Controller,Electronics,Gaming,PlayPeak,131.2,205.0,2023-11-24,0
+15,SKU-ELE-10015,WiFi Smart Plug 4 Pack,Electronics,Smart Home,HomeGrid,99.41,207.1,2024-04-06,0
+16,SKU-HOM-10016,Ceramic Cookware Set,Home,Kitchen,ChefCraft,54.72,105.23,2021-09-13,0
+17,SKU-HOM-10017,Linen Curtain Pair,Home,Decor,DwellStone,65.36,116.72,2022-02-20,0
+18,SKU-HOM-10018,Modular Closet Organizer,Home,Storage,SpaceMint,76.93,128.21,2023-07-02,0
+19,SKU-HOM-10019,Cooling Sheet Set,Home,Bedding,DreamNest,89.41,139.7,2024-12-09,0
+20,SKU-HOM-10020,Cordless Stick Vacuum,Home,Cleaning,PureSweep,63.57,132.44,2021-05-16,0
+21,SKU-BEA-10021,Vitamin C Serum,Beauty,Skincare,GlowTheory,20.67,39.75,2022-10-23,0
+22,SKU-BEA-10022,Hydrating Shampoo Duo,Beauty,Haircare,SilkRoot,26.17,46.74,2023-03-05,0
+23,SKU-BEA-10023,Citrus Eau de Parfum,Beauty,Fragrance,AuraLane,32.24,53.73,2024-08-12,0
+24,SKU-BEA-10024,Matte Lip Color Set,Beauty,Cosmetics,ColorHaus,38.86,60.72,2021-01-19,0
+25,SKU-BEA-10025,Aromatherapy Diffuser,Beauty,Wellness,CalmCo,23.5,48.96,2022-06-01,0
+26,SKU-SPO-10026,Adjustable Dumbbell Pair,Sports,Fitness,FlexForm,56.24,108.15,2023-11-08,0
+27,SKU-SPO-10027,All Weather Hiking Backpack,Sports,Outdoor,TrailAxis,66.29,118.38,2024-04-15,0
+28,SKU-SPO-10028,Urban Bike Helmet,Sports,Cycling,RideSafe,49.95,83.25,2021-09-22,0
+29,SKU-SPO-10029,Composite Basketball,Sports,Team Sports,CourtPro,59.83,93.48,2022-02-04,0
+30,SKU-SPO-10030,Eco Grip Yoga Mat,Sports,Yoga,ZenField,40.78,84.96,2023-07-11,0
+31,SKU-TOY-10031,Robotics Starter Kit,Toys,STEM,BrightBot,31.01,59.63,2024-12-18,0
+32,SKU-TOY-10032,Wooden Art Studio Set,Toys,Creative,CraftNest,37.71,67.34,2021-05-25,0
+33,SKU-TOY-10033,Sensory Play Gym,Toys,Infant,TinyBloom,45.03,75.05,2022-10-07,0
+34,SKU-TOY-10034,Backyard Water Table,Toys,Outdoor Play,SunSprout,52.97,82.76,2023-03-14,1
+35,SKU-TOY-10035,Family Strategy Game,Toys,Games,TableQuest,21.12,44.0,2024-08-21,0
+36,SKU-FUR-10036,Compact Sectional Sofa,Furniture,Living Room,HavenWorks,149.32,287.15,2021-01-03,0
+37,SKU-FUR-10037,Ergonomic Mesh Chair,Furniture,Office,WorkWell,176.01,314.3,2022-06-10,0
+38,SKU-FUR-10038,Queen Platform Bed,Furniture,Bedroom,RestHarbor,204.87,341.45,2023-11-17,0
+39,SKU-FUR-10039,Extendable Dining Table,Furniture,Dining,GatherMade,235.9,368.6,2024-04-24,0
+40,SKU-FUR-10040,Shoe Storage Bench,Furniture,Entryway,PorchLine,180.96,377.0,2021-09-06,0
+41,SKU-PET-10041,Grain Free Dog Food,Pet,Food,PawHarvest,32.38,62.27,2022-02-13,0
+42,SKU-PET-10042,Orthopedic Pet Bed,Pet,Accessories,ComfyPaws,25.48,45.5,2023-07-20,0
+43,SKU-PET-10043,Self Cleaning Brush,Pet,Grooming,FurEase,31.6,52.67,2024-12-02,0
+44,SKU-AUT-10044,Synthetic Motor Oil Pack,Automotive,Maintenance,RoadPrime,46.6,72.82,2021-05-09,0
+45,SKU-AUT-10045,All Weather Floor Mats,Automotive,Accessories,DriveGuard,29.87,62.23,2022-10-16,1
+46,SKU-GAR-10046,Indoor Herb Garden Kit,Garden,Plants,GrowNest,47.21,90.79,2023-03-23,0
+47,SKU-GAR-10047,Cordless Hedge Trimmer,Garden,Tools,YardForce,56.17,100.3,2024-08-05,0
+48,SKU-OFF-10048,Premium Notebook Set,Office,Supplies,PaperGuild,32.62,54.37,2021-01-12,0
+49,SKU-OFF-10049,Wireless Presentation Clicker,Office,Technology,DeskPilot,27.52,43.0,2022-06-19,0
+50,SKU-HEA-10050,Digital Blood Pressure Monitor,Health,Personal Care,CareMetric,28.78,59.95,2023-11-01,0
